@@ -1,0 +1,15 @@
+# Java
+*.class
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Spring Boot
+application.properties
+.env
+
+# OS junk
+Thumbs.db
+.DS_Store
