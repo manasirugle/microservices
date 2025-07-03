@@ -1,15 +1,17 @@
-# Java
-*.class
-target/
+# Ignore target folders
+**/target/
 
-# IntelliJ
-.idea/
+# Ignore IDE files
 *.iml
+.idea/
+*.class
 
-# Spring Boot
-application.properties
-.env
+# Maven wrapper files
+.mvn/
+mvnw
+mvnw.cmd
 
-# OS junk
-Thumbs.db
+# OS files
 .DS_Store
+Thumbs.db
+
