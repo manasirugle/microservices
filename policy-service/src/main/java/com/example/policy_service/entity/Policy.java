@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+
 @Data
 @Entity
 @Table(name = "policy")
@@ -29,8 +30,17 @@ public class Policy {
     private Double policySumInsured;
     private Double policyPremium;
     private String policyPaymentTerm;
+    private Boolean isPolicyExpired;
 
-    private boolean isPolicyExpired;
+
+    public Boolean isPolicyExpired() {
+        return isPolicyExpired;
+    }
+
+    public void setPolicyExpired(Boolean isPolicyExpired) {
+        this.isPolicyExpired = isPolicyExpired;
+    }
+
 
     private LocalDate createdDate;
     private LocalDate updatedDate;
